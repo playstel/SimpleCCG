@@ -19,6 +19,7 @@ public class DropField : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoi
         if (cardDrag)
         {
             cardDrag.DefaultParent = _transform;
+            cardDrag.DefaultTempCardParent = _transform;
         }
     }
 
@@ -30,6 +31,7 @@ public class DropField : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoi
         
         if (cardDrag)
         {
+            cardDrag.DefaultParent = _transform;
             cardDrag.DefaultTempCardParent = _transform;
         }
     }
